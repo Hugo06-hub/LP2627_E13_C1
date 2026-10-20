@@ -1,5 +1,3 @@
-Espaco:
-
 package pt.upt.perdidos.model;
 
 import jakarta.persistence.*;
