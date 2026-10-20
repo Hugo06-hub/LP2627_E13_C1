@@ -2,7 +2,7 @@
 
 Trabalho de LP grupo 13:
 
-Como está organizado
+Como está organizado:
 
 O Main é só o menu, a parte que fala com quem usa o programa. A lógica toda está no Gerir: valida o que o utilizador escreve, grava na base de dados e faz as consultas. As classes da pasta model correspondem às tabelas: Cliente, Funcionario, Espaco, Objeto, HistoricoEstado, Levantamento, Mensagem e Registo.
 
