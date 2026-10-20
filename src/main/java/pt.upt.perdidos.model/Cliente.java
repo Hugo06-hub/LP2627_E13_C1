@@ -44,12 +44,36 @@ public class Cliente {
         this.pass = pass;
     }
 
-    public Long getIdC() { return idC; }
-    public String getNome() { return nome; }
-    public int getNum() { return num; }
-    public String getEmail() { return email; }
-    public void setEmail(String email) { this.email = email; }
-    public List<Levantamento> getLevantamentos() { return levantamentos; }
-    public List<Registo> getRegistos() { return registos; }
-    public Set<Objeto> getReclamados() { return reclamados; }
+    public Long getIdC() { 
+        return idC; 
+    }
+    
+    public String getNome() { 
+        return nome; 
+    }
+    
+    public int getNum() { 
+        return num; 
+    }
+    
+    public String getEmail() { 
+        return email; 
+    } 
+    
+    public void setEmail(String email) { 
+        this.email = email; 
+    }
+    
+    public List<Levantamento> getLevantamentos() { 
+        return levantamentos; 
+    }
+    
+    public List<Registo> getRegistos() { 
+        return registos; 
+    }
+    
+    public Set<Objeto> getReclamados() { 
+        return reclamados; 
+    }
+    
 }
