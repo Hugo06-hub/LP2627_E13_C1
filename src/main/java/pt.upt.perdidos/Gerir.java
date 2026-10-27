@@ -13,6 +13,14 @@ public class Gerir {
 
     private SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
     private Session session = sessionFactory.openSession();
+    
+    private Cliente obterNomeCliente(String nome) {
+    	Cliente cliente = session.get(Cliente.class, nome);
+    	if (nome == null) {
+    		System.out.println("Erro: o cliente com o nome" + nome + "não existe");
+    	}
+    	return cliente;
+    }
 
     private Cliente obterCliente(long idCliente) {
         Cliente cliente = session.get(Cliente.class, idCliente);
@@ -21,7 +29,7 @@ public class Gerir {
         }
         return cliente;
     }
-
+    
     private Funcionario obterFuncionario(long idFuncionario) {
         Funcionario funcionario = session.get(Funcionario.class, idFuncionario);
         if (funcionario == null) {
@@ -38,6 +46,14 @@ public class Gerir {
         return espaco;
     }
 
+    private Objeto obterNomeObjeto(String nome) {
+    	Objeto objeto = session.get(Objeto.class, nome);
+    	if (objeto == null) {
+    		System.out.println("Erro: o objeto com o nome" + nome + "não existe");
+    	}
+    	return objeto;
+    }
+    
     private Objeto obterObjeto(long idObjeto) {
         Objeto objeto = session.get(Objeto.class, idObjeto);
         if (objeto == null) {
